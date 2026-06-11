@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Personal Website">
+<meta name="keywords" content="personal website, nurin amani">
+<meta name="author" content="Nurin Amani">
+<title>Pets 🐾 | Personal Space</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<header>
+<a href="index.html">
+<img src="image/banner.png"></a>
+</header>
+
+<nav>
+<table cellspacing="5">
+<tr>
+<td><a href="index.html"><img src="button/home.png"></a></td>
+<td><a href="aboutme.html"><img src="button/mebutton.png"></a></td>
+<td><a href="family.html"><img src="button/family.png"></a></td>
+<td><a href="friend.html"><img src="button/friend.png"></a></td>
+<td><a href="education.html"><img src="button/education.png"></a></td>
+<td><a href="gallery.html"><img src="button/gallery.png"></a></td>
+<td><a href="pets.html"><img src="button/pets.png"></a></td>
+</tr>
+</table>
+</nav>
+
+
+<div class="card-page">
+<h1>🐾</h1>
+<h2>Fur Babies !</h2>
+<p>Meet the four little ones who own my heart 😸</p>
+</div>
+
+<div class="page-wrap">
+
+<div class="section">
+<h2>😸 My Cats</h2>
+
+<div class="cat-card">
+<div class="cat-inner">
+<img class="cat-photo" src="image/lala.jpg">
+<div class="cat-info">
+<p class="cat-name">🐾 LALA</p>
+<div class="cat-detail">
+<span class="cat-detail-label">Breed</span>
+<span>Domestic Long Hair</span>
+</div>
+<div class="cat-detail">
+<span class="cat-detail-label">Gender</span>
+<span>Female ♀</span>
+</div>
+<div class="cat-detail">
+<span class="cat-detail-label">Age</span>
+<span>15 Years Old</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="cat-card">
+<div class="cat-inner">
+<img class="cat-photo" src="image/melo.jpg">
+<div class="cat-info">
+<p class="cat-name">🐾 MACEMELLO</p>
+<div class="cat-detail">
+<span class="cat-detail-label">Breed</span>
+<span>Tabby</span>
+</div>
+<div class="cat-detail">
+<span class="cat-detail-label">Gender</span>
+<span>Female ♀</span>
+</div>
+<div class="cat-detail">
+<span class="cat-detail-label">Age</span>
+<span>5 Years Old</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="cat-card">
+<div class="cat-inner">
+<img class="cat-photo" src="image/mochii.jpg">
+<div class="cat-info">
+<p class="cat-name">🐾 MOCHI</p>
+<div class="cat-detail">
+<span class="cat-detail-label">Breed</span>
+<span>Tabby</span>
+</div>
+<div class="cat-detail">
+<span class="cat-detail-label">Gender</span>
+<span>Male ♂</span>
+</div>
+<div class="cat-detail">
+<span class="cat-detail-label">Age</span>
+<span>4 Years Old</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="cat-card">
+<div class="cat-inner">
+<img class="cat-photo" src="image/latte.jpg">
+<div class="cat-info">
+<p class="cat-name">🐾 LATTE</p>
+<div class="cat-detail">
+<span class="cat-detail-label">Breed</span>
+<span>Tabby</span>
+</div>
+<div class="cat-detail">
+<span class="cat-detail-label">Gender</span>
+<span>Female ♀</span>
+</div>
+<div class="cat-detail">
+<span class="cat-detail-label">Age</span>
+<span>1 Years Old</span>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+<div id="footer">
+<p>&copy; 2026 Nurin Amani Binti Ahmad Maulana | All Rights Reserved</p>
+<p>Last Updated: June 2026</p>
+</div>
+
+<audio id="bg-music" loop src="audio/audio.mp3"></audio>
+
+<script>
+  var music = document.getElementById("bg-music");
+  var savedTime = localStorage.getItem("audioTime");
+  if (savedTime) {
+    music.currentTime = parseFloat(savedTime);
+  }
+  music.play();
+  setInterval(function() {
+    localStorage.setItem("audioTime", music.currentTime);
+  }, 1000);
+</script>
+
+</body>
+</html>
+</html>

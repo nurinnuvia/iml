@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Personal Website">
+<meta name="keywords" content="personal website, nurin amani">
+<meta name="author" content="Nurin Amani">
+<title>About Me 🌷 | Personal Space</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<header>
+<a href="index.html">
+<img src="image/banner.png"></a>
+</header>
+
+<nav>
+<table cellspacing="5">
+<tr>
+<td><a href="index.html"><img src="button/home.png"></a></td>
+<td><a href="aboutme.html"><img src="button/mebutton.png"></a></td>
+<td><a href="family.html"><img src="button/family.png"></a></td>
+<td><a href="friend.html"><img src="button/friend.png"></a></td>
+<td><a href="education.html"><img src="button/education.png"></a></td>
+<td><a href="gallery.html"><img src="button/gallery.png"></a></td>
+<td><a href="pets.html"><img src="button/pets.png"></a></td>
+</tr>
+</table>
+</nav>
+
+
+<div class="page-wrap">
+
+<div class="card-page">
+<h1><span class="pulse-flower">🌷</span></h1>
+<img src="image/nurin.jpg" width="250">
+<h2>About Me!</h2>
+<p> Hii! Get to know me a lil' better heree ✨</p>
+
+<a href="#funfacts">⭐ Fun Facts</a> | <a href="#thingsilove">💚 Things I Love</a>
+</div>
+</div>
+
+<div class="section">
+<table border="3" cellpadding="8" cellspacing="0" width="90%">
+
+<tr>
+<th colspan="2">🗒️ Personal Details</th>
+</tr>
+
+<tr>
+<td>Full Name</td>
+<td>Nurin Amani binti Ahmad Maulana</td>
+</tr>
+<tr>
+<td>Student ID</td>
+<td>2024660894</td>
+</tr>
+<tr>
+<td>Group</td>
+<td>KCDIM1444A</td>
+</tr>
+<tr>
+<td>Birthdate</td>
+<td>16 January 2006 🎂</td>
+</tr>
+<tr>
+<td>Favourite Colour</td>
+<td style="color:green;">Green 💚</td>
+</tr>
+
+</table>
+</div>
+
+<div class="section" id="funfacts">
+<h3>⭐ Fun Facts About Me</h3>
+<ol>
+<li>I have 3 cats currently 😸</li>
+<li>My favourite animal is... Bear! 🐻</li>
+<li>I enjoy reading 📚</li>
+<li>I am the middle child in the family 👨‍👩‍👧</li>
+<li>I love collecting stickers 🎈</li>
+</ol>
+</div>
+
+<div class="section" id="thingsilove">
+<h3>💚 Things I love</h3>
+<ul>
+<li>😸Cats</li>
+<li>🐻Bear</li>
+<li>🌷Flowers</li>
+<li>📚 Reading</li>
+<li>🎈Stickers</li>
+<li>🍦Ice cream</li>
+</ul>
+</div>
+</div>
+
+
+<div id="footer">
+<p>&copy; 2026 Nurin Amani Binti Ahmad Maulana | All Rights Reserved</p>
+<p>Last Updated: June 2026</p>
+</div>
+
+<audio id="bg-music" loop src="audio/audio.mp3"></audio>
+
+<script>
+  var music = document.getElementById("bg-music");
+  var savedTime = localStorage.getItem("audioTime");
+  if (savedTime) {
+    music.currentTime = parseFloat(savedTime);
+  }
+  music.play();
+  setInterval(function() {
+    localStorage.setItem("audioTime", music.currentTime);
+  }, 1000);
+</script>
+
+</body>
+</html>

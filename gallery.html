@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Personal Website">
+<meta name="keywords" content="personal website, nurin amani">
+<meta name="author" content="Nurin Amani">
+<title>Gallery 📷 | Personal Space</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+<a href="index.html"><img src="image/banner.png"></a>
+</header>
+
+<nav>
+<table cellspacing="5">
+<tr>
+<td><a href="index.html"><img src="button/home.png"></a></td>
+<td><a href="aboutme.html"><img src="button/mebutton.png"></a></td>
+<td><a href="family.html"><img src="button/family.png"></a></td>
+<td><a href="friend.html"><img src="button/friend.png"></a></td>
+<td><a href="education.html"><img src="button/education.png"></a></td>
+<td><a href="gallery.html"><img src="button/gallery.png"></a></td>
+<td><a href="pets.html"><img src="button/pets.png"></a></td>
+</tr>
+</table>
+</nav>
+
+
+<div id="lightbox" onclick="closeLightbox()">
+<button id="lightbox-close" onclick="closeLightbox()">✕</button>
+<img id="lightbox-img" src="" alt="Full size photo">
+</div>
+
+<div class="card-page">
+<span style="font-size: 2.5rem;">📷</span>
+<h2>My Gallery</h2>
+<p>A little collection of my favourite moments 🌸</p>
+</div>
+
+<div class="page-wrap">
+
+<div class="section">
+<h2>👨‍👩‍👧 Family Moments</h2>
+<div class="gallery-grid">
+<img src="image/cumils.jpg"  onclick="openLightbox(this)">
+<img src="image/mama.jpg"    onclick="openLightbox(this)">
+<img src="image/abang.jpg"   onclick="openLightbox(this)">
+<img src="image/ammar.jpg"   onclick="openLightbox(this)">
+</div>
+</div>
+
+<div class="section">
+<h2>👯‍♀️ Friends</h2>
+<div class="gallery-grid">
+<img src="image/wihi.jpg"    onclick="openLightbox(this)">
+<img src="image/cumils2.jpg" onclick="openLightbox(this)">
+<img src="image/wiwi.jpg"  onclick="openLightbox(this)">
+<img src="image/heh.jpg"     onclick="openLightbox(this)">
+</div>
+</div>
+
+<div class="section">
+<h2>🐾 Cattso</h2>
+<div class="gallery-grid">
+<img src="image/gallery.jpg" onclick="openLightbox(this)">
+<img src="image/kiki.jpg"    onclick="openLightbox(this)">
+<img src="image/aww.jpg"     onclick="openLightbox(this)">
+<img src="image/laler.jpg"   onclick="openLightbox(this)">
+</div>
+</div>
+
+<div class="section">
+<h2>🌷 Me</h2>
+<div class="gallery-grid">
+<img src="image/minime.jpg"  onclick="openLightbox(this)">
+<img src="image/me.jpg"      onclick="openLightbox(this)">
+<img src="image/mini.jpg"    onclick="openLightbox(this)">
+<img src="image/grr.jpg"     onclick="openLightbox(this)">
+</div>
+</div>
+
+<div class="section">
+<h2>🌿 Random Nature</h2>
+<div class="gallery-grid">
+<img src="image/cloud.jpg"   onclick="openLightbox(this)">
+<img src="image/ketam.jpg"   onclick="openLightbox(this)">
+<img src="image/sunset.jpg"  onclick="openLightbox(this)">
+<img src="image/random.jpg"  onclick="openLightbox(this)">
+</div>
+</div>
+
+</div>
+
+<div id="footer">
+<p>&copy; 2026 Nurin Amani Binti Ahmad Maulana | All Rights Reserved</p>
+<p>Last Updated: June 2026</p>
+</div>
+
+
+<audio id="bg-music" loop src="audio/audio.mp3"></audio>
+
+<script>
+  var music = document.getElementById("bg-music");
+  var savedTime = localStorage.getItem("audioTime");
+  if (savedTime) {
+    music.currentTime = parseFloat(savedTime);
+  }
+  music.play();
+  setInterval(function() {
+    localStorage.setItem("audioTime", music.currentTime);
+  }, 1000);
+
+  function openLightbox(photo) {
+    document.getElementById("lightbox-img").src = photo.src;
+    document.getElementById("lightbox").style.display = "flex";
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+
+</body>
+</html>

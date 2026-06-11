@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Personal Website">
+<meta name="keywords" content="personal website, nurin amani">
+<meta name="author" content="Nurin Amani">
+<title>Education 🏫 | Personal Space</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<header>
+<a href="index.html">
+<img src="image/banner.png"></a>
+</header>
+
+<nav>
+<table cellspacing="5">
+<tr>
+<td><a href="index.html"><img src="button/home.png"></a></td>
+<td><a href="aboutme.html"><img src="button/mebutton.png"></a></td>
+<td><a href="family.html"><img src="button/family.png"></a></td>
+<td><a href="friend.html"><img src="button/friend.png"></a></td>
+<td><a href="education.html"><img src="button/education.png"></a></td>
+<td><a href="gallery.html"><img src="button/gallery.png"></a></td>
+<td><a href="pets.html"><img src="button/pets.png"></a></td>
+</tr>
+</table>
+</nav>
+
+<div class="page-wrap">
+
+<div class="card-page">
+<h1>🏫</h1>
+<h2>My Education Journey</h2>
+<p>Every school shaped who I am today ✨</p>
+</div>
+
+<div class="section">
+<h2>📍 Education Timeline</h2>
+
+<div class="timeline">
+
+<div class="timeline-block">
+<img src="image/panglimaa.png">
+<p>2013 - 2018</p>
+<p>Sekolah Kebangsaan Jalan Panglima Bukit Gantang</p>
+<p>Primary School</p>
+<a href="https://www.facebook.com/skjpbg" target="_blank">Visit Facebook 🔗</a>
+</div>
+
+<div class="timeline-block">
+<img src="image/bainun.jpg">
+<p>2019 - 2022</p>
+<p>Sekolah Menengah Kebangsaan Raja Permaisuri Bainun</p>
+<p>Secondary School</p>
+<a href="https://www.smkrpb.edu.my/" target="_blank">Visit Website 🔗</a>
+</div>
+
+<div class="timeline-block">
+<img src="image/mrsm.jpg">
+<p>2022 - 2024</p>
+<p>Maktab Rendah Sains MARA(MRSM)Beseri</p>
+<p>High School</p>
+<a href="https://mrsmbeseri.edu.my/" target="_blank">Visit Website 🔗</a>
+</div>
+
+<div class="timeline-block">
+<img src="image/uitm.png">
+<p>2024 - Present</p>
+<p>Universiti Teknlogi MARA (UiTM) Kedah</p>
+<p>Diploma in Library Informatics</p>
+<a href="https://kedah.uitm.edu.my/" target="_blank">Visit Website 🔗</a>
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div id="footer">
+<p>&copy; 2026 Nurin Amani Binti Ahmad Maulana | All Rights Reserved</p>
+<p>Last Updated: June 2026</p>
+</div>
+
+<audio id="bg-music" loop src="audio/audio.mp3"></audio>
+
+<audio id="bg-music" loop src="audio/audio.mp3"></audio>
+
+<script>
+  var music = document.getElementById("bg-music");
+  var savedTime = localStorage.getItem("audioTime");
+  if (savedTime) {
+    music.currentTime = parseFloat(savedTime);
+  }
+  music.play();
+  setInterval(function() {
+    localStorage.setItem("audioTime", music.currentTime);
+  }, 1000);
+</script>
+
+</body>
+</html>
